@@ -1,0 +1,17 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.loading {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}

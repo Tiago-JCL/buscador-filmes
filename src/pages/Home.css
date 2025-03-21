@@ -1,0 +1,13 @@
+.home {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .title-box {
+    display: inline-block;
+    padding: 30px 200px;
+    background-color: #222;
+    border-radius: 80px;
+    font-size: 45px;
+  }
+  
