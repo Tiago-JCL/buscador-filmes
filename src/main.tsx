@@ -1,13 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom"; // Importa o roteador
 import "./index.css";
+import App from "./App.tsx";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <BrowserRouter basename="/buscador-filmes">
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <BrowserRouter basename="/buscador-filmes"> {/* Define a base */}
       <App />
     </BrowserRouter>
-  </React.StrictMode>
+  </StrictMode>
 );
