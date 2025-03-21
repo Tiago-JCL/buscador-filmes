@@ -6,7 +6,7 @@ import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter basename="/buscador-filmes"> {/* Define a base */}
+    <BrowserRouter basename="/buscador-filmes/"> {/* Define a base */}
       <App />
     </BrowserRouter>
   </StrictMode>
