@@ -43,7 +43,7 @@ Agora, acesse `http://localhost:5173` no navegador. 🎥
 ![Captura de Tela1](./screenshots/scrErro.png)  
 
 ## 📌 Funcionalidades
-✅ Busca dinâmica de filmes! 📽️
+✅ Busca dinâmica de filmes 📽️
 ✅ Exibição de detalhes dos filmes 🎭
 ✅ Layout responsivo 📱💻
 ✅ Tratamento de erros 🚧
