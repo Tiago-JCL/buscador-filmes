@@ -4,9 +4,17 @@ import MovieCard from "../components/MovieCard";
 import { fetchMovies } from "../services/api";
 import "./Home.css";
 
+// Definição do tipo para os filmes
+interface MovieType {
+  imdbID: string;
+  Title: string;
+  Year: string;
+  Poster: string;
+}
+
 const Home = () => {
-  const [movies, setMovies] = useState([]);
-  const [error, setError] = useState(null);
+  const [movies, setMovies] = useState<MovieType[]>([]);
+  const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
   const handleSearch = async (query: string) => {

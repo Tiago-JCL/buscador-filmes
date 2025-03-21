@@ -4,12 +4,14 @@ import { fetchMovieDetails } from "../services/api";
 import "./MovieDetails.css";
 
 const MovieDetails = () => {
-  const { id } = useParams<{ id: string }>();
+  const { id } = useParams<{ id?: string }>(); // id pode ser undefined
   const [movie, setMovie] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const loadMovie = async () => {
+      if (!id) return; // Evita chamar a API se id for undefined
+
       try {
         const data = await fetchMovieDetails(id);
         setMovie(data);
