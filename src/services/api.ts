@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "aba1489f"; // Local da chave da OMDB API
+const API_KEY = "SUA_CHAVE_AQUI"; // Local da chave da OMDB API
 const BASE_URL = "https://www.omdbapi.com/";
 
 export const fetchMovies = async (query: string) => {

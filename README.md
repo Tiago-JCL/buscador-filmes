@@ -22,10 +22,11 @@ cd buscador-filmes
 npm install
 ```
 
-### 3️⃣ Criar Arquivo `.env.local`
-No diretório raiz do projeto, crie um arquivo `.env.local` e adicione sua chave da API OMDb:
-```
-VITE_OMDB_API_KEY=SUA_CHAVE_AQUI
+### 3️⃣ Configure a sua Chave da API OMDb
+Abra o arquivo `src/services/api.ts` e, na constante `API_KEY`, coloque a sua chave:
+
+```ts
+const API_KEY = "SUA_CHAVE_AQUI";
 ```
 
 ### 4️⃣ Rodar o Projeto
